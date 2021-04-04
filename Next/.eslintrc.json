@@ -1,0 +1,67 @@
+{
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+        "airbnb",
+    // "standard",
+    // "standard-react",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+      "eslint:recommended",
+      "plugin:react/recommended"
+  ],
+  "parserOptions": {
+      "ecmaFeatures": {
+        "legacyDecorators": true,
+          "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
+  },
+  "plugins": [
+      "react",
+      "prettier"
+  ],
+  "rules": {
+    "space-before-function-paren": 0,
+    "react/jsx-handler-names": 0,
+    "react/jsx-fragments": 0,
+    "react/no-unused-prop-types": 0,
+    "import/export": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "max-len": ["error", { "code": 150 }],
+    "prefer-promise-reject-errors": ["off"],
+    "react/jsx-filename-extension": ["off"],
+    "react/prop-types": ["off"], // warn
+    "no-return-assign": ["off"],
+    "defaultAssignment": ["off"],
+    "import/no-unresolved": ["off"],
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ]
+  }
+}
